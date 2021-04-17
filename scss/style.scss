@@ -2,7 +2,8 @@
 @import "HEADER.scss";
 @import "whatWeDo.scss";
 
-.conteiner{
+.conteiner {
   max-width: 1170px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }

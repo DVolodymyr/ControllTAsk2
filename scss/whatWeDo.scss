@@ -1,51 +1,55 @@
 @import "fonts.scss";
 
-.whatWeDo{
-  hr{
-  width: 100px;
-  height: 1px;
-  background-color: #2c4058;
-  margin:100px 550px 40px 530px;
+.whatWeDo {
+  .conteiner {
+    position: relative;
   }
-  .title__whatWeDo{
-color: #2c4058;
-font-family: $GothamBold;
-font-size: 44px;
-line-height: 22px;
-text-align: center;
-text-transform: uppercase;
-position: relative;
-margin-bottom: 100px;
-  }
-  .behindColums{
-    position: absolute;
-  }
-  .moreText{
-    display: none;
-  }
-  .show{
-    display: block;
-  }
-  .btn{
-    border: 1px solid #000;
+  hr {
     width: 100px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+    height: 1px;
+    background-color: #2c4058;
+    margin: 100px 550px 40px 530px;
   }
-  .column2__whatWeDo{
-    .column2-subtitle__whatWeDo{
-      color: #2c4058;
+  .title__whatWeDo {
+    color: #2c4058;
+    font-family: $GothamBold;
+    font-size: 44px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 100px;
+  }
+  .behindColums {
+    flex: 1 1 40%;
+    position: absolute;
+    top: 100px;
+    left: -200px;
+  }
+  .columns__whatWeDo {
+    position: absolute;
+    display: flex;
+    z-index: 20;
+    top: 150px;
+    left: 50px;
+    .column1__whatWeDo {
+      flex: 1 1 30%;
+    }
+    .column2__whatWeDo {
+      flex: 1 1 70%;
+      padding: 50px 60px;
+
+      .column2-subtitle__whatWeDo {
+        color: #2c4058;
         font-family: $GothamBook;
         font-size: 22px;
         font-weight: 400;
         line-height: 24px;
         text-align: left;
         text-transform: uppercase;
-    }
-        .column2-title__whatWeDo{
+        margin-bottom: 20px;
+      }
+      .column2-title__whatWeDo {
         color: #2c4058;
         font-family: $GothamBold;
         font-size: 44px;
@@ -53,15 +57,49 @@ margin-bottom: 100px;
         line-height: 24px;
         text-align: left;
         text-transform: uppercase;
-        }
-          .desc_whatWeDo{
-            color: #4b5562;
-            font-family:$openSans;
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 30px;
-            text-align: left;
-            margin-top: 40px;
-                    }
+        margin-bottom: 40px;
       }
+      .desc_whatWeDo {
+        color: #4b5562;
+        font-family: $openSans;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: left;
+        margin: 40px 0;
+      }
+      .moreText {
+        display: none;
+      }
+      .show {
+        display: block;
+      }
+      .btn {
+        color: #2c4058;
+        font-family: $GothamBook;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+
+        width: 190px;
+        height: 50px;
+        border: 1px solid #2c4058;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        margin-bottom: 60px;
+      }
+      .coord__whatWeDo {
+        color: #2c4058;
+        font-family: $openSansL;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: left;
+      }
+    }
+  }
 }
