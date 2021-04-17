@@ -1,9 +1,10 @@
 @import "fonts.scss";
 @import "HEADER.scss";
 @import "whatWeDo.scss";
+@import "news.scss";
 
 .conteiner {
   max-width: 1170px;
   margin: 0 auto;
-  flex-wrap: wrap;
+  position: relative;
 }

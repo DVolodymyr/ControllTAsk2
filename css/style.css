@@ -195,27 +195,33 @@
   position: relative;
   margin-bottom: 100px;
 }
-.whatWeDo .behindColums {
+.whatWeDo .behindRow1 {
   flex: 1 1 40%;
   position: absolute;
   top: 100px;
   left: -200px;
 }
-.whatWeDo .columns__whatWeDo {
+.whatWeDo .rows__whatWeDo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.whatWeDo .rows__whatWeDo .row1__whatWeDo {
   position: absolute;
   display: flex;
   z-index: 20;
   top: 150px;
   left: 50px;
 }
-.whatWeDo .columns__whatWeDo .column1__whatWeDo {
+.whatWeDo .rows__whatWeDo .row1__whatWeDo .column1__whatWeDo {
   flex: 1 1 30%;
 }
-.whatWeDo .columns__whatWeDo .column2__whatWeDo {
+.whatWeDo .rows__whatWeDo .row1__whatWeDo .column2__whatWeDo {
   flex: 1 1 70%;
-  padding: 50px 60px;
+  padding: 60px 70px;
 }
-.whatWeDo .columns__whatWeDo .column2__whatWeDo .column2-subtitle__whatWeDo {
+.whatWeDo .rows__whatWeDo .row1__whatWeDo .column2__whatWeDo .column2-subtitle__whatWeDo {
   color: #2c4058;
   font-family: "Gotham-Book", "GothamBook", sans-serif;
   font-size: 22px;
@@ -225,7 +231,7 @@
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.whatWeDo .columns__whatWeDo .column2__whatWeDo .column2-title__whatWeDo {
+.whatWeDo .rows__whatWeDo .row1__whatWeDo .column2__whatWeDo .column2-title__whatWeDo {
   color: #2c4058;
   font-family: "Gotham-Bold", "GothamBold", sans-serif;
   font-size: 44px;
@@ -235,7 +241,7 @@
   text-transform: uppercase;
   margin-bottom: 40px;
 }
-.whatWeDo .columns__whatWeDo .column2__whatWeDo .desc_whatWeDo {
+.whatWeDo .rows__whatWeDo .row1__whatWeDo .column2__whatWeDo .desc_whatWeDo {
   color: #4b5562;
   font-family: "OpenSans-Regular", "OpenSans", sans-serif;
   font-size: 18px;
@@ -244,13 +250,13 @@
   text-align: left;
   margin: 40px 0;
 }
-.whatWeDo .columns__whatWeDo .column2__whatWeDo .moreText {
+.whatWeDo .rows__whatWeDo .row1__whatWeDo .column2__whatWeDo .moreText {
   display: none;
 }
-.whatWeDo .columns__whatWeDo .column2__whatWeDo .show {
+.whatWeDo .rows__whatWeDo .row1__whatWeDo .column2__whatWeDo .show {
   display: block;
 }
-.whatWeDo .columns__whatWeDo .column2__whatWeDo .btn {
+.whatWeDo .rows__whatWeDo .row1__whatWeDo .column2__whatWeDo .btn {
   color: #2c4058;
   font-family: "Gotham-Book", "GothamBook", sans-serif;
   font-size: 14px;
@@ -267,18 +273,54 @@
   cursor: pointer;
   margin-bottom: 60px;
 }
-.whatWeDo .columns__whatWeDo .column2__whatWeDo .coord__whatWeDo {
+.whatWeDo .rows__whatWeDo .row1__whatWeDo .coord__whatWeDo {
   color: #2c4058;
   font-family: "OpenSans-Italic", "OpenSans", sans-serif;
   font-size: 18px;
   line-height: 30px;
   text-align: left;
+  margin-bottom: 65px;
 }
 
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: OpenSans-Italic;
+  src: url(../fonts/OpenSans-Italic.ttf);
+}
+@font-face {
+  font-family: Godham-Bold;
+  src: url(../fonts/gothambold/gothambold1.ttf);
+}
+@font-face {
+  font-family: Gotham-Medium;
+  src: url(../fonts/gotham-medium-webfont.woff);
+}
+@font-face {
+  font-family: Gotham-Medium;
+  src: url(../fonts/Gotham-Medium.ttf);
+}
+@font-face {
+  font-family: Gotham-Book;
+  src: url(../fonts/GothamBook.ttf);
+}
+@font-face {
+  font-family: Gotham-Book;
+  src: url(../fonts/GothamBook.woff);
+}
+.news .conteiner .card {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .conteiner {
   max-width: 1170px;
   margin: 0 auto;
-  flex-wrap: wrap;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */

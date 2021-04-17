@@ -20,78 +20,81 @@
     position: relative;
     margin-bottom: 100px;
   }
-  .behindColums {
+  .behindRow1 {
     flex: 1 1 40%;
     position: absolute;
     top: 100px;
     left: -200px;
   }
-  .columns__whatWeDo {
-    position: absolute;
+  .rows__whatWeDo {
     display: flex;
-    z-index: 20;
-    top: 150px;
-    left: 50px;
-    .column1__whatWeDo {
-      flex: 1 1 30%;
-    }
-    .column2__whatWeDo {
-      flex: 1 1 70%;
-      padding: 50px 60px;
-
-      .column2-subtitle__whatWeDo {
-        color: #2c4058;
-        font-family: $GothamBook;
-        font-size: 22px;
-        font-weight: 400;
-        line-height: 24px;
-        text-align: left;
-        text-transform: uppercase;
-        margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .row1__whatWeDo {
+      position: absolute;
+      display: flex;
+      z-index: 20;
+      top: 150px;
+      left: 50px;
+      .column1__whatWeDo {
+        flex: 1 1 30%;
       }
-      .column2-title__whatWeDo {
-        color: #2c4058;
-        font-family: $GothamBold;
-        font-size: 44px;
-        font-weight: 700;
-        line-height: 24px;
-        text-align: left;
-        text-transform: uppercase;
-        margin-bottom: 40px;
-      }
-      .desc_whatWeDo {
-        color: #4b5562;
-        font-family: $openSans;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 30px;
-        text-align: left;
-        margin: 40px 0;
-      }
-      .moreText {
-        display: none;
-      }
-      .show {
-        display: block;
-      }
-      .btn {
-        color: #2c4058;
-        font-family: $GothamBook;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 22px;
-        text-align: center;
-        text-transform: uppercase;
-
-        width: 190px;
-        height: 50px;
-        border: 1px solid #2c4058;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-
-        margin-bottom: 60px;
+      .column2__whatWeDo {
+        flex: 1 1 70%;
+        padding: 60px 70px;
+        .column2-subtitle__whatWeDo {
+          color: #2c4058;
+          font-family: $GothamBook;
+          font-size: 22px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+          text-transform: uppercase;
+          margin-bottom: 20px;
+        }
+        .column2-title__whatWeDo {
+          color: #2c4058;
+          font-family: $GothamBold;
+          font-size: 44px;
+          font-weight: 700;
+          line-height: 24px;
+          text-align: left;
+          text-transform: uppercase;
+          margin-bottom: 40px;
+        }
+        .desc_whatWeDo {
+          color: #4b5562;
+          font-family: $openSans;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 30px;
+          text-align: left;
+          margin: 40px 0;
+        }
+        .moreText {
+          display: none;
+        }
+        .show {
+          display: block;
+        }
+        .btn {
+          color: #2c4058;
+          font-family: $GothamBook;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 22px;
+          text-align: center;
+          text-transform: uppercase;
+          width: 190px;
+          height: 50px;
+          border: 1px solid #2c4058;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          margin-bottom: 60px;
+        }
       }
       .coord__whatWeDo {
         color: #2c4058;
@@ -99,6 +102,7 @@
         font-size: 18px;
         line-height: 30px;
         text-align: left;
+        margin-bottom: 65px;
       }
     }
   }

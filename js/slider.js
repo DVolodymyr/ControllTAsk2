@@ -1,10 +1,8 @@
+`use strict`
 $(document).ready(function () {
-  // slick carousel
-  $('.slider').slick({
-    dots: true,
-    vertical: true,
-    slidesToShow: 1,
+  $(`.images`).slick({
+    infinite: true,
+    slidesToShow: 3,
     slidesToScroll: 1,
-    verticalSwiping: true,
   });
-});
+})
