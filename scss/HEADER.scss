@@ -1,104 +1,93 @@
 @import "fonts.scss";
 
-.HEADER{
-background: url(../images/Bg1.png)no-repeat center ;
-background-size: cover;
-// background: url(../images/tu-tram-pham-202263.png)no-repeat center;
-  .ellipses{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: column;
-    position: fixed;
-    top:250px;
-    right: 50px;
-      .ellips{
-        width: 10px;
-        height: 10px;
-        border: 1px solid #fff;
-        border-radius: 50%;
-        margin-bottom: 40px;
-      }
-      .ellips:hover{
-        background-color: #ffffff;
-      }
-    
-    }
-  .nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  padding: 60px 30px ;
-    .menu__header {
-    display: flex;
-    }
-    .menu__header a{
-    flex-direction: row;
-    color: #ffffff;
-    font-family: $GothamBook;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: left;
-    margin-right: 70px;
-    text-decoration: none;
-    color: #fff;
-    }
-    .social-icons__header{
-    display: inline-flex;
-      .socIcon{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-right: 20px;
-
-      width: 40px;
-      height: 40px;
-      border: 1px solid #fff;
-      border-radius: 50%;
-      text-align: center;
-      }
-    }
-    
-  }
-  .desc__header{
+.HEADER {
+  background: url(../images/2-layers.png) no-repeat center;
+  background-size: cover;
+  .ellipses {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-      .title__header{
-        color: #ffffff;
-        font-family: $GothamBold;
-        font-size: 80px;
-        font-weight: 700;
-        line-height: 22px;
+    .ellips {
+      width: 10px;
+      height: 10px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      margin-bottom: 40px;
+    }
+    .ellips:hover {
+      background-color: #ffffff;
+    }
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 60px 30px;
+    .menu__header {
+      display: flex;
+    }
+    .menu__header a {
+      flex-direction: row;
+      color: #ffffff;
+      font-family: $GothamBook;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: left;
+      margin-right: 70px;
+      text-decoration: none;
+      color: #fff;
+    }
+    .social-icons__header {
+      display: inline-flex;
+      .socIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+
+        width: 40px;
+        height: 40px;
+        border: 1px solid #fff;
+        border-radius: 50%;
         text-align: center;
-        text-transform: uppercase;
-        margin-top: 285px;
-        }
-      .subtitle__header{
-        color: #ffffff;
-        font-family: $GothamBook;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 22px;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 5.4px;
-        margin-top: 40px;
       }
     }
-.scroll{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 230px;
-  padding: 50px;
+  }
+  .desc__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .title__header {
+      color: #ffffff;
+      font-family: $GothamBold;
+      font-size: 80px;
+      font-weight: 700;
+      line-height: 22px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 285px;
+    }
+    .subtitle__header {
+      color: #ffffff;
+      font-family: $GothamBook;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 5.4px;
+      margin-top: 40px;
+    }
+  }
+  .scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 230px;
+    padding: 50px;
+  }
 }
-
-
-
-}
-
-

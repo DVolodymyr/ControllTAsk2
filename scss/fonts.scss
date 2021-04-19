@@ -1,16 +1,34 @@
-@font-face { font-family: OpenSans-Regular; src: url(../fonts/OpenSans-Regular.ttf); } 
-@font-face { font-family: OpenSans-Italic; src: url(../fonts/OpenSans-Italic.ttf); } 
-@font-face { font-family: Godham-Bold; src: url(../fonts/gothambold/gothambold1.ttf); } 
-@font-face { font-family: Gotham-Medium; src: url(../fonts/gotham-medium-webfont.woff); } 
-@font-face { font-family: Gotham-Medium; src: url(../fonts/Gotham-Medium.ttf); } 
-@font-face { font-family: Gotham-Book; src: url(../fonts/GothamBook.ttf); } 
-@font-face { font-family: Gotham-Book; src: url(../fonts/GothamBook.woff); } 
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: OpenSans-Italic;
+  src: url(../fonts/OpenSans-Italic.ttf);
+}
+@font-face {
+  font-family: Godham-Bold;
+  src: url(../fonts/gothambold/gothambold1.ttf);
+}
+@font-face {
+  font-family: Gotham-Medium;
+  src: url(../fonts/gotham-medium-webfont.woff);
+}
+@font-face {
+  font-family: Gotham-Medium;
+  src: url(../fonts/Gotham-Medium.ttf);
+}
+@font-face {
+  font-family: Gotham-Book;
+  src: url(../fonts/GothamBook.ttf);
+}
+@font-face {
+  font-family: Gotham-Book;
+  src: url(../fonts/GothamBook.woff);
+}
 
 $openSans: "OpenSans-Regular", "OpenSans", sans-serif;
 $openSansL: "OpenSans-Italic", "OpenSans", sans-serif;
 $GothamBold: "Gotham-Bold", "GothamBold", sans-serif;
-$GothamBold: "Gotham-Bold", "GothamBold", sans-serif;
 $GothamBook: "Gotham-Book", "GothamBook", sans-serif;
-$GothamBook: "Gotham-Book", "GothamBook" , sans-serif;
-$GothamMedium: "Gotham-Medium", "GothamMedium" , sans-serif;
-$GothamMedium: "Gotham-Medium", "GothamMedium" , sans-serif;
+$GothamMedium: "Gotham-Medium", "GothamMedium", sans-serif;

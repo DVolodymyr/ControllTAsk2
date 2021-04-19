@@ -1,17 +1,107 @@
 @import "fonts.scss";
 .news {
+  background: url(../images/BgNews.png) no-repeat center;
+  background-size: cover;
   .conteiner {
-    .card {
+    flex-direction: row;
+    .news__card-one {
       width: 370px;
       height: 515px;
       flex: 1 1 30%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      .autors > p {
-        display: flex;
-        flex-direction: row;
+      background-color: #fff;
+      .news__card-one__img {
+        background: url(../images/card1/Img.png) no-repeat center;
+        background-size: cover;
+      }
+      .news__card-one__autor {
+        .news__card-one__autor-photo {
+          float: left;
+        }
+        .news__card-one__autor-name {
+          color: #2c4058;
+          font-family: $GothamBook;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 22px;
+          text-align: left;
+          text-transform: uppercase;
+        }
+        .news__card-one__autor-data {
+          color: #55b7ff;
+          font-family: $GothamBook;
+          font-size: 14px;
+          font-weight: 400;
+          text-decoration: none;
+          line-height: 22px;
+          text-align: left;
+          text-decoration: none;
+        }
+      }
+    }
+    .news__card-two {
+      width: 370px;
+      height: 515px;
+      flex: 1 1 30%;
+      background-color: #fff;
+      .news__card-two__img {
+        background: url(../images/card2/matthew-hamilton-202227.png) no-repeat center;
+        background-size: cover;
+      }
+      .news__card-two__autor {
+        .news__card-two__autor-photo {
+          float: left;
+        }
+        .news__card-two__autor-name {
+          color: #2c4058;
+          font-family: $GothamBook;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 22px;
+          text-align: left;
+          text-transform: uppercase;
+        }
+        .news__card-two__autor-data {
+          color: #55b7ff;
+          font-family: $GothamBook;
+          font-size: 14px;
+          font-weight: 400;
+          text-decoration: none;
+          line-height: 22px;
+          text-align: left;
+        }
+      }
+    }
+    .news__card-three {
+      width: 370px;
+      height: 515px;
+      flex: 1 1 30%;
+      background-color: #fff;
+      .news__card-three__img {
+        background: url(../images/card3/joel-filipe-151690.png) no-repeat center;
+        background-size: cover;
+      }
+      .news__card-three__autor {
+        .news__card-three__autor-photo {
+          float: left;
+        }
+        .news__card-three__autor-name {
+          color: #2c4058;
+          font-family: $GothamBook;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 22px;
+          text-align: left;
+          text-transform: uppercase;
+        }
+        .news__card-three__autor-data {
+          color: #55b7ff;
+          font-family: $GothamBook;
+          font-size: 14px;
+          font-weight: 400;
+          text-decoration: none;
+          line-height: 22px;
+          text-align: left;
+        }
       }
     }
   }
