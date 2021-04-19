@@ -174,9 +174,9 @@
   src: url(../fonts/GothamBook.woff);
 }
 .whatWeDo {
-  padding: 70px 215px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .whatWeDo hr {
@@ -263,6 +263,13 @@
   height: 50px;
   border: 1px solid #2c4058;
 }
+.whatWeDo .left-article__whatWeDo-text-btn:hover {
+  background-color: #2c4058;
+  color: #fff;
+}
+.whatWeDo .left-article__whatWeDo-text-btn:active {
+  background-color: #0b79ff;
+}
 .whatWeDo .left-article__whatWeDo-text-coord {
   color: #2c4058;
   font-family: "OpenSans-Italic", "OpenSans", sans-serif;
@@ -280,6 +287,7 @@
   max-width: 100%;
   height: auto;
   position: relative;
+  margin-bottom: 140px;
 }
 .whatWeDo .right-article__whatWeDo__img__bg {
   width: 580px;
@@ -337,6 +345,13 @@
   height: 50px;
   border: 1px solid #2c4058;
 }
+.whatWeDo .right-article__whatWeDo-text-btn:hover {
+  background-color: #2c4058;
+  color: #fff;
+}
+.whatWeDo .right-article__whatWeDo-text-btn:active {
+  background-color: #0b79ff;
+}
 .whatWeDo .right-article__whatWeDo-text-coord {
   color: #2c4058;
   font-family: "OpenSans-Italic", "OpenSans", sans-serif;
@@ -373,27 +388,87 @@
   font-family: Gotham-Book;
   src: url(../fonts/GothamBook.woff);
 }
-.news {
+.latest__news {
   background: url(../images/BgNews.png) no-repeat center;
   background-size: cover;
+  height: 1035px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.news .conteiner {
-  flex-direction: row;
-}
-.news .conteiner .news__card-one {
-  width: 370px;
-  height: 515px;
-  flex: 1 1 30%;
+.latest__news hr {
+  width: 100px;
+  height: 1px;
   background-color: #fff;
+  border: none;
+  margin-bottom: 40px;
 }
-.news .conteiner .news__card-one .news__card-one__img {
-  background: url(../images/card1/Img.png) no-repeat center;
-  background-size: cover;
+.latest__news .latest__news__title {
+  color: #ffffff;
+  font-family: "Gotham-Medium", "GothamMedium", sans-serif;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 100px;
 }
-.news .conteiner .news__card-one .news__card-one__autor .news__card-one__autor-photo {
+.latest__news .latest__news__cards {
+  display: flex;
+}
+.latest__news .latest__news__cards .latest__news__card-one {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+}
+.latest__news .latest__news__cards .latest__news__card-one__img {
+  width: 370px;
+  height: 240px;
+}
+.latest__news .latest__news__cards .latest__news__card-one__img img {
+  width: 370px;
+  height: 240px;
+}
+.latest__news .latest__news__cards .latest__news__card-one__text {
+  background-color: white;
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.latest__news .latest__news__cards .latest__news__card-one__text-title {
+  color: #2c4058;
+  font-family: "Gotham-Bold", "GothamBold", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 30px 75px 20px 20px;
+}
+.latest__news .latest__news__cards .latest__news__card-one__text-desc {
+  color: #4b5562;
+  font-family: "OpenSans-Regular", "OpenSans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  margin: 0 30px 45px 20px;
+}
+.latest__news .latest__news__cards .latest__news__card-one__text-author {
+  display: flex;
+  padding: 0 20px 30px 20px;
+  align-items: center;
+}
+.latest__news .latest__news__cards .latest__news__card-one__text-author-photo {
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  border-radius: 50%;
   float: left;
 }
-.news .conteiner .news__card-one .news__card-one__autor .news__card-one__autor-name {
+.latest__news .latest__news__cards .latest__news__card-one__text-author-name {
   color: #2c4058;
   font-family: "Gotham-Book", "GothamBook", sans-serif;
   font-size: 18px;
@@ -402,30 +477,67 @@
   text-align: left;
   text-transform: uppercase;
 }
-.news .conteiner .news__card-one .news__card-one__autor .news__card-one__autor-data {
+.latest__news .latest__news__cards .latest__news__card-one__text-author-data {
   color: #55b7ff;
   font-family: "Gotham-Book", "GothamBook", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  text-decoration: none;
   line-height: 22px;
   text-align: left;
-  text-decoration: none;
 }
-.news .conteiner .news__card-two {
+.latest__news .latest__news__cards .latest__news__card-two {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+}
+.latest__news .latest__news__cards .latest__news__card-two__img {
   width: 370px;
-  height: 515px;
-  flex: 1 1 30%;
-  background-color: #fff;
+  height: 240px;
 }
-.news .conteiner .news__card-two .news__card-two__img {
-  background: url(../images/card2/matthew-hamilton-202227.png) no-repeat center;
-  background-size: cover;
+.latest__news .latest__news__cards .latest__news__card-two__img img {
+  width: 370px;
+  height: 240px;
 }
-.news .conteiner .news__card-two .news__card-two__autor .news__card-two__autor-photo {
+.latest__news .latest__news__cards .latest__news__card-two__text {
+  background-color: white;
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.latest__news .latest__news__cards .latest__news__card-two__text-title {
+  color: #2c4058;
+  font-family: "Gotham-Bold", "GothamBold", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 30px 75px 20px 20px;
+}
+.latest__news .latest__news__cards .latest__news__card-two__text-desc {
+  color: #4b5562;
+  font-family: "OpenSans-Regular", "OpenSans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  margin: 0 30px 45px 20px;
+}
+.latest__news .latest__news__cards .latest__news__card-two__text-author {
+  display: flex;
+  padding: 0 20px 30px 20px;
+  align-items: center;
+}
+.latest__news .latest__news__cards .latest__news__card-two__text-author-photo {
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  border-radius: 50%;
   float: left;
 }
-.news .conteiner .news__card-two .news__card-two__autor .news__card-two__autor-name {
+.latest__news .latest__news__cards .latest__news__card-two__text-author-name {
   color: #2c4058;
   font-family: "Gotham-Book", "GothamBook", sans-serif;
   font-size: 18px;
@@ -434,29 +546,63 @@
   text-align: left;
   text-transform: uppercase;
 }
-.news .conteiner .news__card-two .news__card-two__autor .news__card-two__autor-data {
+.latest__news .latest__news__cards .latest__news__card-two__text-author-data {
   color: #55b7ff;
   font-family: "Gotham-Book", "GothamBook", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  text-decoration: none;
   line-height: 22px;
   text-align: left;
 }
-.news .conteiner .news__card-three {
+.latest__news .latest__news__cards .latest__news__card-three {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+}
+.latest__news .latest__news__cards .latest__news__card-three__img {
+  width: 100%;
+  height: 240px;
+}
+.latest__news .latest__news__cards .latest__news__card-three__text {
+  background-color: white;
   width: 370px;
-  height: 515px;
-  flex: 1 1 30%;
-  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.news .conteiner .news__card-three .news__card-three__img {
-  background: url(../images/card3/joel-filipe-151690.png) no-repeat center;
-  background-size: cover;
+.latest__news .latest__news__cards .latest__news__card-three__text-title {
+  color: #2c4058;
+  font-family: "Gotham-Bold", "GothamBold", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 30px 75px 20px 20px;
 }
-.news .conteiner .news__card-three .news__card-three__autor .news__card-three__autor-photo {
+.latest__news .latest__news__cards .latest__news__card-three__text-desc {
+  color: #4b5562;
+  font-family: "OpenSans-Regular", "OpenSans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  margin: 0 30px 45px 20px;
+}
+.latest__news .latest__news__cards .latest__news__card-three__text-author {
+  display: flex;
+  padding: 0 20px 30px 20px;
+  align-items: center;
+}
+.latest__news .latest__news__cards .latest__news__card-three__text-author-photo {
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  border-radius: 50%;
   float: left;
 }
-.news .conteiner .news__card-three .news__card-three__autor .news__card-three__autor-name {
+.latest__news .latest__news__cards .latest__news__card-three__text-author-name {
   color: #2c4058;
   font-family: "Gotham-Book", "GothamBook", sans-serif;
   font-size: 18px;
@@ -465,18 +611,13 @@
   text-align: left;
   text-transform: uppercase;
 }
-.news .conteiner .news__card-three .news__card-three__autor .news__card-three__autor-data {
+.latest__news .latest__news__cards .latest__news__card-three__text-author-data {
   color: #55b7ff;
   font-family: "Gotham-Book", "GothamBook", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  text-decoration: none;
   line-height: 22px;
   text-align: left;
-}
-
-.hovering {
-  display: none;
 }
 
 .conteiner {

@@ -1,111 +1,233 @@
 @import "fonts.scss";
-.news {
+.latest__news {
   background: url(../images/BgNews.png) no-repeat center;
   background-size: cover;
-  .conteiner {
-    flex-direction: row;
-    .news__card-one {
-      width: 370px;
-      height: 515px;
-      flex: 1 1 30%;
-      background-color: #fff;
-      .news__card-one__img {
-        background: url(../images/card1/Img.png) no-repeat center;
-        background-size: cover;
-      }
-      .news__card-one__autor {
-        .news__card-one__autor-photo {
-          float: left;
+  height: 1035px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  hr {
+    width: 100px;
+    height: 1px;
+    background-color: #fff;
+    border: none;
+    margin-bottom: 40px;
+  }
+  .latest__news__title {
+    color: #ffffff;
+    font-family: $GothamMedium;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+  }
+  .latest__news__cards {
+    display: flex;
+    .latest__news__card-one {
+      display: flex;
+      flex-direction: column;
+      margin: 0 15px;
+      &__img {
+        width: 370px;
+        height: 240px;
+        img {
+          width: 370px;
+          height: 240px;
         }
-        .news__card-one__autor-name {
+      }
+      &__text {
+        background-color: white;
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &-title {
           color: #2c4058;
-          font-family: $GothamBook;
-          font-size: 18px;
-          font-weight: 400;
-          line-height: 22px;
+          font-family: $GothamBold;
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 34px;
           text-align: left;
           text-transform: uppercase;
+          margin: 30px 75px 20px 20px;
         }
-        .news__card-one__autor-data {
-          color: #55b7ff;
-          font-family: $GothamBook;
-          font-size: 14px;
+        &-desc {
+          color: #4b5562;
+          font-family: $openSans;
+          font-size: 18px;
           font-weight: 400;
-          text-decoration: none;
-          line-height: 22px;
+          line-height: 30px;
           text-align: left;
-          text-decoration: none;
+          margin: 0 30px 45px 20px;
         }
       }
     }
-    .news__card-two {
-      width: 370px;
-      height: 515px;
-      flex: 1 1 30%;
-      background-color: #fff;
-      .news__card-two__img {
-        background: url(../images/card2/matthew-hamilton-202227.png) no-repeat center;
-        background-size: cover;
+    .latest__news__card-one__text-author {
+      display: flex;
+      padding: 0 20px 30px 20px;
+      align-items: center;
+      &-photo {
+        margin-right: 20px;
+        width: 60px;
+        height: 60px;
+        background-position: center;
+        border-radius: 50%;
+        float: left;
       }
-      .news__card-two__autor {
-        .news__card-two__autor-photo {
-          float: left;
+      &-name {
+        color: #2c4058;
+        font-family: $GothamBook;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
+        text-transform: uppercase;
+      }
+      &-data {
+        color: #55b7ff;
+        font-family: $GothamBook;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
+      }
+    }
+    .latest__news__card-two {
+      display: flex;
+      flex-direction: column;
+      margin: 0 15px;
+      &__img {
+        width: 370px;
+        height: 240px;
+        img {
+          width: 370px;
+          height: 240px;
         }
-        .news__card-two__autor-name {
+      }
+      &__text {
+        background-color: white;
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &-title {
           color: #2c4058;
-          font-family: $GothamBook;
-          font-size: 18px;
-          font-weight: 400;
-          line-height: 22px;
+          font-family: $GothamBold;
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 34px;
           text-align: left;
           text-transform: uppercase;
+          margin: 30px 75px 20px 20px;
         }
-        .news__card-two__autor-data {
-          color: #55b7ff;
-          font-family: $GothamBook;
-          font-size: 14px;
+        &-desc {
+          color: #4b5562;
+          font-family: $openSans;
+          font-size: 18px;
           font-weight: 400;
-          text-decoration: none;
-          line-height: 22px;
+          line-height: 30px;
           text-align: left;
+          margin: 0 30px 45px 20px;
         }
       }
     }
-    .news__card-three {
-      width: 370px;
-      height: 515px;
-      flex: 1 1 30%;
-      background-color: #fff;
-      .news__card-three__img {
-        background: url(../images/card3/joel-filipe-151690.png) no-repeat center;
-        background-size: cover;
+    .latest__news__card-two__text-author {
+      display: flex;
+      padding: 0 20px 30px 20px;
+      align-items: center;
+      &-photo {
+        margin-right: 20px;
+        width: 60px;
+        height: 60px;
+        background-position: center;
+        border-radius: 50%;
+        float: left;
       }
-      .news__card-three__autor {
-        .news__card-three__autor-photo {
-          float: left;
-        }
-        .news__card-three__autor-name {
+      &-name {
+        color: #2c4058;
+        font-family: $GothamBook;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
+        text-transform: uppercase;
+      }
+      &-data {
+        color: #55b7ff;
+        font-family: $GothamBook;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
+      }
+    }
+    .latest__news__card-three {
+      display: flex;
+      flex-direction: column;
+      margin: 0 15px;
+      &__img {
+        width: 100%;
+        height: 240px;
+      }
+      &__text {
+        background-color: white;
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &-title {
           color: #2c4058;
-          font-family: $GothamBook;
-          font-size: 18px;
-          font-weight: 400;
-          line-height: 22px;
+          font-family: $GothamBold;
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 34px;
           text-align: left;
           text-transform: uppercase;
+          margin: 30px 75px 20px 20px;
         }
-        .news__card-three__autor-data {
-          color: #55b7ff;
-          font-family: $GothamBook;
-          font-size: 14px;
+        &-desc {
+          color: #4b5562;
+          font-family: $openSans;
+          font-size: 18px;
           font-weight: 400;
-          text-decoration: none;
-          line-height: 22px;
+          line-height: 30px;
           text-align: left;
+          margin: 0 30px 45px 20px;
         }
+      }
+    }
+    .latest__news__card-three__text-author {
+      display: flex;
+      padding: 0 20px 30px 20px;
+      align-items: center;
+      &-photo {
+        margin-right: 20px;
+        width: 60px;
+        height: 60px;
+        background-position: center;
+        border-radius: 50%;
+        float: left;
+      }
+      &-name {
+        color: #2c4058;
+        font-family: $GothamBook;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
+        text-transform: uppercase;
+      }
+      &-data {
+        color: #55b7ff;
+        font-family: $GothamBook;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
       }
     }
   }
-}
-.hovering {
-  display: none;
 }

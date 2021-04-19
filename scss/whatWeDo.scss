@@ -1,9 +1,9 @@
 @import "fonts.scss";
 
 .whatWeDo {
-  padding: 70px 215px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   hr {
     width: 100px;
@@ -88,6 +88,13 @@
         height: 50px;
         border: 1px solid #2c4058;
       }
+      &-btn:hover {
+        background-color: #2c4058;
+        color: #fff;
+      }
+      &-btn:active {
+        background-color: #0b79ff;
+      }
       &-coord {
         color: #2c4058;
         font-family: $openSansL;
@@ -107,6 +114,7 @@
       max-width: 100%;
       height: auto;
       position: relative;
+      margin-bottom: 140px;
       &__bg {
         width: 580px;
         height: 470px;
@@ -163,6 +171,13 @@
         width: 190px;
         height: 50px;
         border: 1px solid #2c4058;
+      }
+      &-btn:hover {
+        background-color: #2c4058;
+        color: #fff;
+      }
+      &-btn:active {
+        background-color: #0b79ff;
       }
       &-coord {
         color: #2c4058;
