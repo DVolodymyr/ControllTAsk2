@@ -42,7 +42,7 @@
       }
     }
   }
-  .desc__header {
+  .desc__header1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,6 +69,88 @@
       margin-top: 40px;
     }
   }
+  .desc__header2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .title__header {
+      color: #000000;
+      font-family: $GothamBold;
+      font-size: 80px;
+      font-weight: 700;
+      line-height: 22px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 285px;
+    }
+    .subtitle__header {
+      color: #000000;
+      font-family: $GothamBook;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 5.4px;
+      margin-top: 40px;
+    }
+  }
+  .desc__header3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .title__header {
+      color: #ff0000;
+      font-family: $GothamBold;
+      font-size: 80px;
+      font-weight: 700;
+      line-height: 22px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 285px;
+    }
+    .subtitle__header {
+      color: #ff0000;
+      font-family: $GothamBook;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 5.4px;
+      margin-top: 40px;
+    }
+  }
+  .desc__header4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .title__header {
+      color: #1100ff;
+      font-family: $GothamBold;
+      font-size: 80px;
+      font-weight: 700;
+      line-height: 22px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 285px;
+    }
+    .subtitle__header {
+      color: #1100ff;
+      font-family: $GothamBook;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 5.4px;
+      margin-top: 40px;
+    }
+  }
+
   .scroll {
     display: flex;
     justify-content: center;
@@ -79,5 +161,14 @@
   }
   .scroll:hover {
     fill: #2c4058;
+  }
+  .slick-dots li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    left: 1000px;
+    top: 0px;
+    margin: 40px 0;
   }
 }
