@@ -77,9 +77,21 @@
   font-weight: 400;
   line-height: 22px;
   text-align: left;
-  margin-right: 70px;
+  margin: 0 40px;
   text-decoration: none;
   color: #fff;
+}
+.HEADER .nav .menu__header a::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+.HEADER .nav .menu__header a:hover::before {
+  background-color: #fff;
 }
 .HEADER .nav .social-icons__header {
   display: inline-flex;
@@ -220,8 +232,9 @@
   justify-content: center;
   flex-direction: column;
   left: 1000px;
-  top: 0px;
-  margin: 40px 0;
+  top: -25px;
+  margin-top: 40px;
+  margin-left: 110px;
 }
 
 @font-face {
@@ -272,13 +285,13 @@
   text-align: center;
   text-transform: uppercase;
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 170px;
 }
 .whatWeDo .left-article__whatWeDo {
   display: flex;
   justify-content: flex-start;
   max-width: 1600px;
-  margin-bottom: 130px;
+  margin-bottom: 200px;
 }
 .whatWeDo .left-article__whatWeDo__img {
   display: block;
@@ -874,7 +887,7 @@
 }
 .form {
   position: relative;
-  top: -250px;
+  top: -300px;
   margin: 0 auto;
   max-width: 770px;
   width: 100%;
@@ -1012,7 +1025,10 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  margin-top: 260px;
+  margin-top: 300px;
+}
+.footer .conteiner .footer__all .footer__logo .footer__social-icons {
+  cursor: pointer;
 }
 .footer .conteiner .footer__all .footer__logo .footer__social-icons .social-icons__footer {
   display: inline-flex;

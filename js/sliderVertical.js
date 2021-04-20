@@ -6,9 +6,8 @@ $(document).ready(function () {
     slidesToScroll: 1,
     verticalSwiping: true,
     arrows: false,
-    autoplay: true,
-    autoplaySpeed: 4000,
     infinite: true,
+    swipe: true,
 
   });
 });

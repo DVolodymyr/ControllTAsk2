@@ -18,8 +18,9 @@
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
-        margin-top: 260px;
+        margin-top: 300px;
         .footer__social-icons {
+          cursor: pointer;
           .social-icons__footer {
             display: inline-flex;
             .socIcon {
