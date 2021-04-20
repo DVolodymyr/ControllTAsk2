@@ -413,12 +413,22 @@
   margin: 0 15px;
 }
 .latest__news .latest__news__cards .latest__news__card-one__img {
+  position: relative;
   width: 370px;
   height: 240px;
 }
-.latest__news .latest__news__cards .latest__news__card-one__img img {
-  width: 370px;
-  height: 240px;
+.latest__news .latest__news__cards .latest__news__card-one__img .top {
+  position: absolute;
+  z-index: 0;
+}
+.latest__news .latest__news__cards .latest__news__card-one__img .bottom {
+  position: absolute;
+  z-index: -1;
+  top: 100px;
+  left: 140px;
+}
+.latest__news .latest__news__cards .latest__news__card-one__img:hover .bottom {
+  z-index: 9;
 }
 .latest__news .latest__news__cards .latest__news__card-one__text {
   background-color: white;
@@ -482,12 +492,22 @@
   margin: 0 15px;
 }
 .latest__news .latest__news__cards .latest__news__card-two__img {
+  position: relative;
   width: 370px;
   height: 240px;
 }
-.latest__news .latest__news__cards .latest__news__card-two__img img {
-  width: 370px;
-  height: 240px;
+.latest__news .latest__news__cards .latest__news__card-two__img .top {
+  position: absolute;
+  z-index: 0;
+}
+.latest__news .latest__news__cards .latest__news__card-two__img .bottom {
+  position: absolute;
+  z-index: -1;
+  top: 100px;
+  left: 140px;
+}
+.latest__news .latest__news__cards .latest__news__card-two__img:hover .bottom {
+  z-index: 9;
 }
 .latest__news .latest__news__cards .latest__news__card-two__text {
   background-color: white;
@@ -551,8 +571,22 @@
   margin: 0 15px;
 }
 .latest__news .latest__news__cards .latest__news__card-three__img {
-  width: 100%;
+  position: relative;
+  width: 370px;
   height: 240px;
+}
+.latest__news .latest__news__cards .latest__news__card-three__img .top {
+  position: absolute;
+  z-index: 0;
+}
+.latest__news .latest__news__cards .latest__news__card-three__img .bottom {
+  position: absolute;
+  z-index: -1;
+  top: 100px;
+  left: 140px;
+}
+.latest__news .latest__news__cards .latest__news__card-three__img:hover .bottom {
+  z-index: 9;
 }
 .latest__news .latest__news__cards .latest__news__card-three__text {
   background-color: white;
@@ -956,7 +990,7 @@
   flex-wrap: wrap;
 }
 .leftAll .conteiner .left-article-img {
-  margin-top: 200px;
+  margin-top: 50px;
 }
 .leftAll .conteiner .left-article-text {
   display: flex;
@@ -1067,7 +1101,7 @@
   flex-wrap: wrap;
 }
 .rightAll .conteiner .right-article-img {
-  margin-top: 200px;
+  margin-top: 50px;
 }
 .rightAll .conteiner .right-article-text {
   display: flex;
