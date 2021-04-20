@@ -747,6 +747,10 @@
   line-height: 22px;
   text-align: left;
 }
+.latest__news .slick-slider {
+  width: 1300px;
+  height: 570px;
+}
 
 @font-face {
   font-family: OpenSans-Regular;
