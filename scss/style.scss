@@ -5,7 +5,12 @@
 @import "gallery.scss";
 @import "form.scss";
 @import "footer.scss";
+@import "left-article-details.scss";
+@import "right-article-details.scss";
 
+html {
+  scroll-behavior: smooth;
+}
 .conteiner {
   max-width: 1200px;
   margin: 0 auto;
