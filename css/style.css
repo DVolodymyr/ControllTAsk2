@@ -236,6 +236,10 @@
   margin-top: 40px;
   margin-left: 110px;
 }
+.HEADER .slick-dots li button:before {
+  font-size: 20px;
+  line-height: 20px;
+}
 
 @font-face {
   font-family: OpenSans-Regular;
@@ -750,6 +754,10 @@
 .latest__news .slick-slider {
   width: 1300px;
   height: 570px;
+}
+.latest__news .slick-dots li button:before {
+  font-size: 20px;
+  line-height: 20px;
 }
 
 @font-face {
