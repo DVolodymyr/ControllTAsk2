@@ -3,50 +3,11 @@
 .footer {
   position: relative;
   z-index: -1;
-  top: -468px;
-  background: url(../images/bgHeader.png);
+  top: -545px;
+  background: url(../images/bgHeader.png) no-repeat center;
   background-size: cover;
   .conteiner {
-    max-width: 770px;
     height: 520px;
-    .footer__all {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      .footer__logo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        margin-top: 300px;
-        .footer__social-icons {
-          cursor: pointer;
-          .social-icons__footer {
-            display: inline-flex;
-            .socIcon {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              margin-right: 20px;
-              width: 40px;
-              height: 40px;
-              border: 1px solid #fff;
-              border-radius: 50%;
-              text-align: center;
-            }
-          }
-        }
-      }
-      .footer__Copyrights {
-        color: #ffffff;
-        font-family: $GothamBook;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 22px;
-        text-align: left;
-        margin-top: 40px;
-        margin-bottom: 210px;
-      }
-    }
+    background-size: cover;
   }
 }

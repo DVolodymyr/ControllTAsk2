@@ -913,27 +913,25 @@
   font-family: Gotham-Book;
   src: url(../fonts/GothamBook.woff);
 }
-.form {
+.all__form {
   position: relative;
   top: -300px;
   margin: 0 auto;
   max-width: 770px;
   width: 100%;
-  background-image: url("../images/city@2x.png");
+  background-image: url("/images/city@2x.png");
   background-size: cover;
   background-position: bottom;
-}
-.form .all__form {
   padding: 60px;
   background-color: rgba(255, 255, 255, 0.7);
 }
-.form .all__form hr {
+.all__form hr {
   width: 100px;
   height: 1px;
   background-color: #2c4058;
-  margin: 40px 280px 30px;
+  margin: 40px 340px 30px;
 }
-.form .all__form .title__form {
+.all__form .title__form {
   color: #2c4058;
   font-family: "Gotham-Medium", "GothamMedium", sans-serif;
   font-size: 44px;
@@ -943,12 +941,12 @@
   text-transform: uppercase;
   margin-bottom: 60px;
 }
-.form .all__form .form__info {
+.all__form .form__info {
   height: 190px;
   display: flex;
   justify-content: space-between;
 }
-.form .all__form .form__info .form__data {
+.all__form .form__info .form__data {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -959,18 +957,18 @@
   line-height: 34px;
   text-align: left;
 }
-.form .all__form .form__info .form__enter {
+.all__form .form__info .form__enter {
   max-width: 310px;
   width: 100%;
 }
-.form .all__form .form__info .form__enter form {
+.all__form .form__info .form__enter form {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-end;
 }
-.form .all__form .form__info .form__enter form input {
+.all__form .form__info .form__enter form input {
   width: 100%;
   height: 40px;
   outline: none;
@@ -978,7 +976,7 @@
   background-color: rgba(255, 255, 255, 0.7);
   border-bottom: 1px solid black;
 }
-.form .all__form .form__info .form__enter .submit {
+.all__form .form__info .form__enter .submit {
   width: 140px;
   height: 50px;
   border: 1px solid #2c4058;
@@ -993,15 +991,56 @@
   text-align: center;
   text-transform: uppercase;
 }
-.form .all__form .form__info .form__enter .submit:focus {
+.all__form .form__info .form__enter .submit:focus {
   border: 1px solid #0b79ff;
 }
-.form .all__form .form__info .form__enter .submit:hover {
+.all__form .form__info .form__enter .submit:hover {
   background-color: #2c4058;
   color: #fff;
 }
-.form .all__form .form__info .form__enter .submit:active {
+.all__form .form__info .form__enter .submit:active {
   background-color: #0b79ff;
+}
+
+.form-footer__all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 770px;
+  margin: 0 auto;
+  margin-top: -250px;
+}
+.form-footer__all .footer__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.form-footer__all .footer__logo .footer__social-icons {
+  cursor: pointer;
+}
+.form-footer__all .footer__logo .footer__social-icons .social-icons__footer {
+  display: inline-flex;
+}
+.form-footer__all .footer__logo .footer__social-icons .social-icons__footer .socIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.form-footer__all .footer__Copyrights {
+  color: #ffffff;
+  font-family: "Gotham-Book", "GothamBook", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 210px;
 }
 
 @font-face {
@@ -1035,52 +1074,13 @@
 .footer {
   position: relative;
   z-index: -1;
-  top: -468px;
-  background: url(../images/bgHeader.png);
+  top: -545px;
+  background: url(../images/bgHeader.png) no-repeat center;
   background-size: cover;
 }
 .footer .conteiner {
-  max-width: 770px;
   height: 520px;
-}
-.footer .conteiner .footer__all {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.footer .conteiner .footer__all .footer__logo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  margin-top: 300px;
-}
-.footer .conteiner .footer__all .footer__logo .footer__social-icons {
-  cursor: pointer;
-}
-.footer .conteiner .footer__all .footer__logo .footer__social-icons .social-icons__footer {
-  display: inline-flex;
-}
-.footer .conteiner .footer__all .footer__logo .footer__social-icons .social-icons__footer .socIcon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 20px;
-  width: 40px;
-  height: 40px;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  text-align: center;
-}
-.footer .conteiner .footer__all .footer__Copyrights {
-  color: #ffffff;
-  font-family: "Gotham-Book", "GothamBook", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  text-align: left;
-  margin-top: 40px;
-  margin-bottom: 210px;
+  background-size: cover;
 }
 
 @font-face {
