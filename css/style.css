@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: OpenSans-Regular;
   src: url(../fonts/OpenSans-Regular.ttf);
@@ -236,9 +237,15 @@
   margin-top: 40px;
   margin-left: 110px;
 }
+.HEADER .slick-dots li.slick-active button:before {
+  color: #ffffff;
+  content: "•";
+}
 .HEADER .slick-dots li button:before {
+  content: "⊙";
   font-size: 20px;
   line-height: 20px;
+  color: #fff;
 }
 
 @font-face {
@@ -755,9 +762,18 @@
   width: 1200px;
   height: 570px;
 }
+.latest__news .slick-dots li {
+  margin: 0 40px;
+}
+.latest__news .slick-dots li.slick-active button:before {
+  color: #ffffff;
+  content: "•";
+}
 .latest__news .slick-dots li button:before {
+  content: "⊙";
   font-size: 20px;
   line-height: 20px;
+  color: #fff;
 }
 
 @font-face {

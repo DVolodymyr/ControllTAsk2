@@ -183,9 +183,15 @@
     top: -25px;
     margin-top: 40px;
     margin-left: 110px;
+    &.slick-active button:before {
+      color: #ffffff;
+      content: "•";
+    }
   }
   .slick-dots li button:before {
+    content: "⊙";
     font-size: 20px;
     line-height: 20px;
+    color: #fff;
   }
 }
