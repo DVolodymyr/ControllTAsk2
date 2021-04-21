@@ -9,7 +9,7 @@
     align-items: center;
     flex-direction: row;
     padding: 60px 30px;
-
+    flex-wrap: wrap;
     .menu__header {
       position: sticky;
       display: flex;
@@ -59,6 +59,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    cursor: move;
     .title__header {
       color: #ffffff;
       font-family: $GothamBold;
@@ -86,6 +87,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    cursor: move;
     .title__header {
       color: #000000;
       font-family: $GothamBold;
@@ -113,6 +115,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    cursor: move;
     .title__header {
       color: #ff0000;
       font-family: $GothamBold;
@@ -140,6 +143,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    cursor: move;
     .title__header {
       color: #1100ff;
       font-family: $GothamBold;

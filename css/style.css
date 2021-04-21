@@ -65,6 +65,7 @@
   align-items: center;
   flex-direction: row;
   padding: 60px 30px;
+  flex-wrap: wrap;
 }
 .HEADER .nav .menu__header {
   position: sticky;
@@ -113,6 +114,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  cursor: move;
 }
 .HEADER .desc__header1 .title__header {
   color: #ffffff;
@@ -140,6 +142,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  cursor: move;
 }
 .HEADER .desc__header2 .title__header {
   color: #000000;
@@ -167,6 +170,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  cursor: move;
 }
 .HEADER .desc__header3 .title__header {
   color: #ff0000;
@@ -194,6 +198,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  cursor: move;
 }
 .HEADER .desc__header4 .title__header {
   color: #1100ff;
@@ -309,15 +314,7 @@
   max-width: 100%;
   height: auto;
   position: relative;
-}
-.whatWeDo .left-article__whatWeDo__img__bg {
-  width: 580px;
-  height: 470px;
-  background-color: #55b7ff;
-  position: absolute;
-  left: -215px;
-  top: -70px;
-  z-index: -2;
+  box-shadow: -230px -70px 0px #55b7ff;
 }
 .whatWeDo .left-article__whatWeDo-text {
   padding-left: 70px;
@@ -392,15 +389,7 @@
   height: auto;
   position: relative;
   margin-bottom: 140px;
-}
-.whatWeDo .right-article__whatWeDo__img__bg {
-  width: 580px;
-  height: 470px;
-  background-color: #7e5aff;
-  position: absolute;
-  right: -215px;
-  top: -70px;
-  z-index: -2;
+  box-shadow: 230px -70px 0px #7e5aff;
 }
 .whatWeDo .right-article__whatWeDo-text {
   padding-right: 70px;
@@ -815,7 +804,7 @@
   width: 100px;
   height: 1px;
   background-color: #2c4058;
-  margin: 100px 550px 40px 530px;
+  margin: 100px 650px 40px;
 }
 .gallery .conteiner .title__gallery {
   color: #2c4058;
@@ -862,7 +851,7 @@
 .gallery .conteiner .gallery__images .gallery__images__group #last {
   margin-left: 10px;
 }
-.gallery .conteiner .btn__gallery {
+.gallery .conteiner .btn__gallery a {
   color: #2c4058;
   font-family: "Gotham-Book", "GothamBook", sans-serif;
   font-size: 14px;
@@ -876,12 +865,13 @@
   height: 50px;
   border: 1px solid #2c4058;
   margin: 60px 0 140px 0;
+  text-decoration: none;
 }
-.gallery .conteiner .btn__gallery:hover {
+.gallery .conteiner .btn__gallery a:hover {
   background-color: #2c4058;
   color: #fff;
 }
-.gallery .conteiner .btn__gallery:active {
+.gallery .conteiner .btn__gallery a:active {
   background-color: #0b79ff;
 }
 
